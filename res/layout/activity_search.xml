@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bk" >
+	<ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+ 
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#FF1100" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜索商家"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.example.view.ExpandTabView
+        android:id="@+id/expandtab_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:text="@string/hello_world" >
+    </com.example.view.ExpandTabView>
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandtab_view"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/searchtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+           
+        </EditText>
+
+        <Button
+            android:id="@+id/searchsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/searchtext"
+            android:layout_toLeftOf="@+id/nextpage"
+            android:background="@drawable/shape"
+            android:text="搜索"
+            android:textColor="@color/moren"
+            android:textColorHint="@color/moren" />
+
+        <Button
+            android:id="@+id/nextpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/searchsubmit"
+            android:background="@drawable/shape"
+            android:text="下一页"
+            android:textColor="@color/moren"
+            android:textColorHint="@color/moren" />
+
+        <ProgressBar
+            android:id="@+id/circleProgressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nextpage"
+            android:visibility="gone" />
+
+   </RelativeLayout>
+
+<ListView
+    android:id="@+id/ListViewmy"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/search" />
+ <requestFocus />
+</RelativeLayout>

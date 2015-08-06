@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="${packageName}.${activityClass}" >
+<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_bk" >
+
+<ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="举报信息"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+<EditText
+    android:id="@+id/morereason"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/connect"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/company"
+    android:gravity="top"
+    android:hint="填写详细原因"
+    android:textSize="16dp" />
+
+<EditText
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/relativeLayout1"
+    android:ems="10"
+    android:hint="标题" >
+
+    <requestFocus />
+</EditText>
+
+<EditText
+    android:id="@+id/company"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/title"
+    android:ems="10"
+    android:hint="企业名称"
+    android:textSize="20dp" />
+
+<Button
+    android:id="@+id/submit"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/shape"
+    android:text="提交"
+    android:textColor="@color/moren"
+    android:textColorLink="@color/moren" />
+
+<EditText
+    android:id="@+id/connect"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/submit"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:ems="10"
+    android:hint="企业联系方式" />
+    
+</RelativeLayout>

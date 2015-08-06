@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	  android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#FFFFFF"
+	    android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_bk" >
+
+<ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="企业信息"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+<ListView android:layout_width="wrap_content" 
+           android:layout_height="420dp" 
+          android:id="@+id/ListViewmy"
+          />
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:background="@color/moren"
+            android:drawableTop="@drawable/watch_ad_detail_fav_n"
+            android:text="收藏" />
+
+        <Button
+            android:id="@+id/getgold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="5dp"
+            android:background="#4ec8c5"
+            android:text="捡金币"
+            android:textColor="@color/moren" />
+    </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>

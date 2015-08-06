@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" 
+     android:id="@+id/uploadLayout">
+<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_bk" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+         <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="实名认证"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+<EditText
+    android:id="@+id/name_foridentity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView1"
+    android:layout_alignBottom="@+id/textView1"
+    android:layout_alignParentRight="true"
+    android:layout_toRightOf="@+id/textView1"
+    android:ems="10" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/relativeLayout1"
+    android:layout_marginTop="96dp"
+    android:text="真实姓名："
+    android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/nameword"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/relativeLayout1"
+    android:layout_marginTop="32dp"
+    android:layout_toLeftOf="@+id/editText2"
+    android:text="身份证号："
+    android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/name_foridentity"
+    android:layout_marginTop="27dp"
+    android:text="身份证图片" />
+
+<ImageView
+    android:id="@+id/picImg2"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/textView2"
+    android:layout_marginRight="32dp"
+    android:layout_marginTop="53dp"
+    android:src="@drawable/ic_add_pic" />
+
+<Button
+    android:id="@+id/submit_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView3"
+    android:layout_alignParentBottom="true"
+    android:layout_alignRight="@+id/textView4"
+    android:layout_marginBottom="26dp"
+    android:background="@drawable/shape"
+    android:text="提交"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white" />
+
+<ImageView
+    android:id="@+id/picImg"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignTop="@+id/picImg2"
+    android:layout_marginLeft="40dp"
+    android:src="@drawable/ic_add_pic" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView3"
+    android:layout_alignBottom="@+id/textView3"
+    android:layout_alignLeft="@+id/picImg2"
+    android:layout_marginLeft="30dp"
+    android:text="反面"
+    android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/picImg"
+    android:layout_marginTop="19dp"
+    android:layout_toRightOf="@+id/textView2"
+    android:text="正面"
+    android:textSize="20dp" />
+
+<EditText
+    android:id="@+id/namenum"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/nameword"
+    android:layout_alignBottom="@+id/nameword"
+    android:layout_alignParentRight="true"
+    android:layout_toRightOf="@+id/nameword"
+    android:ems="10" >
+
+</EditText>
+
+</RelativeLayout>

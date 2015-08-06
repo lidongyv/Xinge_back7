@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xinge"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.example.xinge.DataForm"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.example.xinge.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.SetkeyActivity"
+            android:label="@string/title_activity_setkey"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.LoginrActivity"
+            android:label="@string/title_activity_loginr"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.MainTabActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.MainboardActivity"
+            android:label="@string/title_activity_mainboard" >
+        </activity>
+        <activity android:name="com.example.xinge.AActivity" >
+        </activity>
+        <activity android:name="com.example.xinge.BActivity" >
+        </activity>
+        <activity android:name="com.example.xinge.CActivity" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.MerchantActivity"
+            android:label="@string/title_activity_merchant" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.AdActivity"
+            android:label="@string/title_activity_ad" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.PostcomActivity"
+            android:label="@string/title_activity_postcom" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.CompostActivity"
+            android:label="@string/title_activity_compost" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.CompleteselfActivity"
+            android:label="@string/title_activity_completesolf" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.SelfinformationActivity"
+            android:label="@string/title_activity_selfinformation" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.GoldActivity"
+            android:label="@string/title_activity_gold" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.ComregisterActivity"
+            android:label="@string/title_activity_comregister" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.xinge.ComupdateActivity"
+            android:label="@string/title_activity_comupdate" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.MoneyActivity"
+            android:label="@string/title_activity_money" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.VipActivity"
+            android:label="@string/title_activity_vip" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.VipexplainActivity"
+            android:label="@string/title_activity_vipexplain" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.IdentityActivity"
+            android:label="@string/title_activity_identity" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.EmailActivity"
+            android:label="@string/title_activity_email" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.NameidentityActivity"
+            android:label="@string/title_activity_nameidentity" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.GanenActivity"
+            android:label="@string/title_activity_ganen" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.GanenjieshaoActivity"
+            android:label="@string/title_activity_ganenjieshao" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.GanenmoneyActivity"
+            android:label="@string/title_activity_ganenmoney" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.LookmoneyActivity"
+            android:label="@string/title_activity_lookmoney" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.LookgoldActivity"
+            android:label="@string/title_activity_lookgold" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.SuggestionActivity"
+            android:label="@string/title_activity_suggestion" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.GongnengActivity"
+            android:label="@string/title_activity_gongneng" >
+        </activity>
+        <activity
+            android:name="com.example.xinge.GongsijianjieActivity"
+            android:label="@string/title_activity_gongsijianjie" >
+        </activity>
+    </application>
+
+</manifest>

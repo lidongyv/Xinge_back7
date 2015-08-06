@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           
+             android:layout_width="fill_parent"
+        android:layout_height="fill_parent"  >
+<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_bk" >
+	<ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+         <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="完善信息"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+            <EditText
+                android:id="@+id/fax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ctype"
+                android:ems="10"
+                android:hint="传真" />
+
+            <EditText
+                android:id="@+id/ctype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/relativeLayout1"
+                android:ems="10"
+                android:hint="公司种类" ></EditText>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/fax"
+                android:ems="10"
+                android:hint="座机"
+                android:inputType="text" />
+ <EditText
+                android:id="@+id/faren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/phone"
+                android:ems="10"
+                android:hint="法人代表"
+                android:inputType="text" />
+  <EditText
+                android:id="@+id/zijin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/faren"
+                android:ems="10"
+                android:hint="注册资金"
+                android:inputType="text" />
+   <EditText
+                android:id="@+id/wangzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/zijin"
+                android:ems="10"
+                android:hint="公司网址"
+                android:inputType="text" />
+      <EditText
+                android:id="@+id/hangye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/wangzhi"
+                android:ems="10"
+                android:hint="行业"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/dizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/hangye"
+                android:ems="10"
+                android:hint="详细地址"
+                android:inputType="text" />
+                        <EditText
+                android:id="@+id/zhizhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/dizhi"
+                android:ems="10"
+                android:hint="注册执照号"
+                android:inputType="text" />
+            <Button
+                android:id="@+id/cposton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/shape"
+                android:text="提交"
+                android:textColor="@color/moren" />
+
+        </RelativeLayout>
+        

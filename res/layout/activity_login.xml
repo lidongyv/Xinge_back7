@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <Button
+        android:id="@+id/sendcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checknum"
+        android:text="获取验证码" 
+        android:background="@drawable/shape2"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bk"
+        android:gravity="center"
+        android:text="注册1"
+        android:textColor="@color/moren"
+        android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reason"
+        android:layout_below="@+id/reason"
+        android:layout_marginTop="14dp"
+        android:text="验证码"
+        android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    <EditText
+        android:id="@+id/checknum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/phonenum"
+        android:layout_toRightOf="@+id/reason"
+        android:ems="10"
+        android:hint="@string/yanzhnegma"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phonenum"
+        android:layout_alignBottom="@+id/phonenum"
+        android:layout_alignParentLeft="true"
+        android:text="手机号码："
+        android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    <EditText
+        android:id="@+id/phonenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/reason"
+        android:ems="10"
+        android:hint="@string/shouji"
+        android:inputType="phone"
+        android:textSize="@dimen/abc_action_bar_title_text_size" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/loginr2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape2"
+        android:text="下一步" />
+
+</RelativeLayout>

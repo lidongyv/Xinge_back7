@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="${packageName}.${activityClass}" >
+<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_bk" >
+<ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布信息"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+<Spinner
+    android:id="@+id/type"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/reason"
+    android:background="@drawable/shape"
+    android:entries="@array/spingarr" />
+
+<EditText
+    android:id="@+id/reason"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/relativeLayout1"
+    android:layout_marginTop="19dp"
+    android:hint="发布标题"
+    android:textSize="20dp" />
+
+<EditText
+    android:id="@+id/morereason"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/submit"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/type"
+    android:gravity="top"
+    android:hint="填写详细原因"
+    android:textSize="16dp" />
+
+<Button
+    android:id="@+id/submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/shape"
+    android:text="提交"
+    android:textColor="@color/moren"
+    android:textColorLink="@color/moren" />
+
+
+    
+</RelativeLayout>

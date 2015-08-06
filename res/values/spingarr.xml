@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="spingarr">
+     <item>选择发布种类</item>  
+     <item>政府监管信息</item>  
+    <item>银行信贷信息</item>  
+    <item>行业评价信息</item>  
+    <item>企业运行信息</item>  
+     <item>市场反馈信息</item>  
+    <item>社会责任</item> 
+    </string-array>
+</resources>

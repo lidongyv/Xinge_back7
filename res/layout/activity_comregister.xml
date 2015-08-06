@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_bk" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="企业注册"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/comname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:hint="公司名称"
+        android:textSize="20dp" ><requestFocus /></EditText>
+
+    <Button
+        android:id="@+id/comsubmit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/shape"
+        android:text="提交"
+        android:textColor="@color/moren"
+        android:textColorLink="@color/moren" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/comname"
+        android:layout_alignBottom="@+id/comname"
+        android:layout_alignParentLeft="true"
+        android:text="企业名称:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/comname"
+        android:gravity="center"
+        android:text="企业地址:"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/combrief"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/comsubmit1"
+         android:layout_below="@+id/dizhi"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="企业简介"
+        android:textSize="16dp" >
+
+        
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/comname"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/comname"
+        android:text="请选择省市区"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+        <LinearLayout
+              android:id="@+id/dizhi"
+          android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:orientation="horizontal"
+            android:layout_below="@+id/textView1" >
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/id_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/id_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/id_district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">信鸽</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="shouji">请输入手机号码</string>
+    <string name="yanzhnegma">请输入短信验证码</string>
+    <string name="title_activity_setkey">SetkeyActivity</string>
+    <string name="title_activity_loginr">LoginrActivity</string>
+    <string name="title_activity_mainboard">MainboardActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="main_news">发信息</string>
+    <string name="main_home">捡金币</string>
+    <string name="more">更多</string>
+    <string name="main_manage_date">个人</string>
+    <string name="main_friends">好友</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="no_data">没有找到符合条件的房源</string>
+    <string name="title_activity_merchant">MerchantActivity</string>
+    <string name="title_activity_ad">AdActivity</string>
+    <string name="title_activity_postcom">PostcomActivity</string>
+    <string name="title_activity_compost">CompostActivity</string>
+    <string name="title_activity_completesolf">CompletesolfActivity</string>
+    <string name="title_activity_selfinformation">SelfinformationActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_gold">GoldActivity</string>
+    <string name="title_activity_comregister">ComregisterActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_comupdate">ComupdateActivity</string>
+    <string name="title_activity_money">MoneyActivity</string>
+    <string name="title_activity_vip">VipActivity</string>
+    <string name="title_activity_vipexplain">VipexplainActivity</string>
+    <string name="title_activity_identity">IdentityActivity</string>
+    <string name="title_activity_email">EmailActivity</string>
+    <string name="title_activity_nameidentity">NameidentityActivity</string>
+    <string name="title_activity_ganen">GanenActivity</string>
+    <string name="title_activity_ganenjieshao">GanenjieshaoActivity</string>
+    <string name="title_activity_ganenmoney">GanenmoneyActivity</string>
+    <string name="title_activity_lookmoney">LookmoneyActivity</string>
+    <string name="title_activity_lookgold">LookgoldActivity</string>
+    <string name="title_activity_suggestion">SuggestionActivity</string>
+    <string name="title_activity_gongneng">GongnengActivity</string>
+    <string name="title_activity_gongsijianjie">GongsijianjieActivity</string>
+
+</resources>

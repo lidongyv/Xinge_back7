@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bk"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/moren"
+        android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    <Button
+        android:id="@+id/loginr3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/key"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/shape2"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="28dp"
+        android:text="密码："
+        android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/reason"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="phone" ><requestFocus /></EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_alignParentLeft="true"
+        android:text="手机号："
+        android:textSize="@dimen/abc_action_bar_title_text_size" />
+
+</RelativeLayout>

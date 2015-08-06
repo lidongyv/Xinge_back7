@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7F7F7"
+    tools:context="${packageName}.${activityClass}" >
+
+<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_bk" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+         <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="感恩机制"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+<Button
+    android:id="@+id/fenxiang"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/ganen"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/shape2"
+    android:gravity="left|center_vertical"
+    android:text="感恩分享" />
+
+<Button
+    android:id="@+id/ganen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/jieshao"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/shape2"
+    android:gravity="left|center_vertical"
+    android:text="感恩确认" />
+
+<Button
+    android:id="@+id/jieshao"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/relativeLayout1"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/shape2"
+    android:gravity="left|center_vertical"
+    android:text="感恩活动介绍" />
+
+</RelativeLayout>

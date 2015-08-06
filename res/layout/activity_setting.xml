@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="#FFFFFF" >
+<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_bk" >
+<ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通用设置"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+            <EditText
+                android:id="@+id/changekey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/relativeLayout1"
+                android:ems="10"
+                android:hint="更改密码" />
+
+            <Button
+                android:id="@+id/poston"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/changekey"
+                android:background="@drawable/shape"
+                android:text="提交"
+                android:textColor="@color/moren" />
+
+            <Button
+                android:id="@+id/tuichu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape"
+                android:text="退出登录"
+                android:textColor="@color/moren" />
+
+        </RelativeLayout>
+        

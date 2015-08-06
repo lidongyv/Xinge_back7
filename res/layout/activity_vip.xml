@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="${packageName}.${activityClass}" >
+
+   <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_bk" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back2" />
+         <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户VIP"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+   <ImageView
+       android:id="@+id/account_image_in_vip"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/relativeLayout1"
+       android:layout_marginLeft="36dp"
+       android:layout_marginTop="34dp"
+       android:src="@drawable/ic_launcher" />
+
+   <TextView
+       android:id="@+id/accountname_in_vip"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/account_image_in_vip"
+       android:layout_marginLeft="19dp"
+       android:layout_marginTop="14dp"
+       android:layout_toRightOf="@+id/account_image_in_vip"
+       android:text="账号" />
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="5dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/account_image_in_vip"
+       android:layout_marginTop="14dp"
+       android:background="@color/no_color" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/textView2"
+       android:layout_marginTop="20dp"
+       android:text="用户特权：" />
+
+   <Button
+       android:id="@+id/VIP"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/textView3"
+       android:layout_alignBottom="@+id/textView3"
+       android:layout_alignParentRight="true"
+       android:background="@drawable/shape2"
+       android:text="点击查看" />
+
+   <ImageView
+       android:id="@+id/imageView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/imageView1"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/goldmore" />
+
+   <ImageView
+       android:id="@+id/imageView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:layout_alignTop="@+id/imageView2"
+       android:layout_marginRight="24dp"
+       android:src="@drawable/goldaccount" />
+
+   <ImageView
+       android:id="@+id/imageView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignRight="@+id/account_image_in_vip"
+       android:layout_below="@+id/VIP"
+       android:layout_marginTop="16dp"
+       android:src="@drawable/goldup" />
+
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/imageView1"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="20dp"
+       android:text="金币收益提高" />
+
+   <TextView
+       android:id="@+id/textView4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/textView1"
+       android:layout_alignBottom="@+id/textView1"
+       android:layout_centerHorizontal="true"
+       android:text="现金收益提高" />
+
+   <TextView
+       android:id="@+id/textView5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/textView4"
+       android:layout_alignBottom="@+id/textView4"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="15dp"
+       android:text="VIP账户升级" />
+
+   <Button
+       android:id="@+id/buyvip"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="49dp"
+       android:layout_toLeftOf="@+id/textView5"
+       android:layout_toRightOf="@+id/textView1"
+       android:background="@drawable/shape"
+       android:text="购买VIP"
+       android:textColor="@color/white"
+       android:textColorHint="@color/white" />
+    
+</RelativeLayout>
